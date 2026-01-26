@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tvoje jména | Web Designer</title>
+
+  <!-- Google Fonts - ⬇️ NAHRAĎ VLASTNÍM FONTEM -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header bude tady -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+
+        <!-- Logo / Jméno -->
+        <a href="#home" class="logo">Zuzan Suchánek</a>
+
+        <!-- Navigační menu -->
+        <nav class="nav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">o mne</a>
+          <a href="#skills" class="nav-link">co umim</a>
+          <a href="#works" class="nav-link">projekty</a>
+          <a href="#contact" class="nav-link">kontakt</a>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+  <!-- Hero sekce bude tady -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Levá strana - text -->
+        <div class="hero-text">
+          <h1>
+            Hi,<br>
+            I'm <span class="highlight">Good</span><br>
+            Web Designer
+          </h1>
+
+          <p>Creative and passionate about building beautiful digital experiences.</p>
+
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </div>
+
+        <!-- Pravá strana - fotka -->
+        <div class="hero-image">
+          <svg class="image-mask" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- SVG maska bude tady - vytvoříme v kroku 6 -->
+            <defs>
+              <clipPath id="circleMask">
+                <path fill="#FF0066"
+                  d="M36.4,-61.9C45.3,-58,49.1,-44.3,48.5,-32.3C47.9,-20.4,42.7,-10.2,41.8,-0.5C41,9.2,44.3,18.3,42.3,25.8C40.4,33.2,33.1,39,25.2,45.5C17.2,52,8.6,59.2,-0.4,59.9C-9.4,60.6,-18.9,54.8,-28.3,49.2C-37.7,43.5,-47,38,-49.8,29.9C-52.6,21.7,-48.9,10.9,-51.6,-1.6C-54.3,-14,-63.4,-27.9,-62.9,-40.1C-62.5,-52.4,-52.4,-62.8,-40.3,-64.9C-28.2,-66.9,-14.1,-60.5,-0.2,-60.3C13.8,-60,27.6,-65.9,36.4,-61.9Z"
+                  transform="translate(200 200) scale(2.3)" />
+              </clipPath>
+            </defs>
+            <image href="images/jaFatify.jpg" width="400" height="400" clip-path="url(#circleMask)" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
